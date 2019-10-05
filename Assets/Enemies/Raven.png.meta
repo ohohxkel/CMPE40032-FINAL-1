@@ -1,0 +1,712 @@
+fileFormatVersion: 2
+guid: 592b2fcb6e8ef9741b0c06e2b1c6d3fe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3603820936014727726
+    second: Raven_0
+  - first:
+      213: 2397777571148299690
+    second: Raven_1
+  - first:
+      213: -6342677871192489295
+    second: Raven_2
+  - first:
+      213: 1345748279220781912
+    second: Raven_3
+  - first:
+      213: 811202453527309726
+    second: Raven_4
+  - first:
+      213: 4087214949640994454
+    second: Raven_5
+  - first:
+      213: -142822853511780789
+    second: Raven_6
+  - first:
+      213: -1943268093948174596
+    second: Raven_7
+  - first:
+      213: 5121371693037134196
+    second: Raven_8
+  - first:
+      213: -2434758136674664350
+    second: Raven_9
+  - first:
+      213: 8741235459071833982
+    second: Raven_10
+  - first:
+      213: 8501113020289612719
+    second: Raven_11
+  - first:
+      213: 7784444954607266215
+    second: Raven_12
+  - first:
+      213: 3832690294033136664
+    second: Raven_13
+  - first:
+      213: 6670306702187234876
+    second: Raven_14
+  - first:
+      213: -1748464952349436394
+    second: Raven_15
+  - first:
+      213: -5573798086032224186
+    second: Raven_16
+  - first:
+      213: 535786600643671335
+    second: Raven_17
+  - first:
+      213: -181355167609592702
+    second: Raven_18
+  - first:
+      213: -318850474038041618
+    second: Raven_19
+  - first:
+      213: -2542445234324028913
+    second: Raven_20
+  - first:
+      213: 5313350854806462564
+    second: Raven_21
+  - first:
+      213: -3628981102909820828
+    second: Raven_22
+  - first:
+      213: -4496968620571507628
+    second: Raven_23
+  - first:
+      213: -1563305548533430553
+    second: Raven_24
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Raven_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2731
+        width: 719
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803d8a3d20627fc489946d8c4e3b9cac
+      internalID: 3603820936014727726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_1
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 2731
+        width: 718
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e0d2f7b2c292c48b5821961b81a147
+      internalID: 2397777571148299690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_2
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2676
+        width: 728
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37d21215b1d50f40ac7f8bad9c8f484
+      internalID: -6342677871192489295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_3
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 2519
+        width: 721
+        height: 485
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58b61733b6673643aac84f172fe6647
+      internalID: 1345748279220781912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2033
+        width: 717
+        height: 488
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eca8e4e698dacd498de7d99765fa97c
+      internalID: 811202453527309726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_5
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 2007
+        width: 715
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b3a7a39824d1f4780615c226576ef0
+      internalID: 4087214949640994454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_6
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 1991
+        width: 718
+        height: 530
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f4a173ec438aa459f21e9567172132
+      internalID: -142822853511780789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_7
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 1991
+        width: 716
+        height: 530
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9354c71c6ee53aa4784b1137c0f69175
+      internalID: -1943268093948174596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_8
+      rect:
+        serializedVersion: 2
+        x: 2866
+        y: 1984
+        width: 723
+        height: 537
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254a354672b5c68449e11887f238671f
+      internalID: 5121371693037134196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1426
+        width: 719
+        height: 557
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e9998051382834dbb0c53d028d82c6
+      internalID: -2434758136674664350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_10
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 1423
+        width: 718
+        height: 561
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481b19b1ed4d55a4fad876f8df8d949c
+      internalID: 8741235459071833982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_11
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1423
+        width: 716
+        height: 561
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4e0d4964d8dee4f9c447fa439c7263
+      internalID: 8501113020289612719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_12
+      rect:
+        serializedVersion: 2
+        x: 2157
+        y: 1416
+        width: 716
+        height: 567
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a29ada8bc7b864b8df4fd56d13fd8a
+      internalID: 7784444954607266215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_13
+      rect:
+        serializedVersion: 2
+        x: 2873
+        y: 1400
+        width: 718
+        height: 584
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b353b2c1be3ffb4e9f54bd52a5f7f30
+      internalID: 3832690294033136664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 749
+        width: 721
+        height: 652
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c2831f6598b5d4494d0b93e968bfbc
+      internalID: 6670306702187234876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_15
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 748
+        width: 723
+        height: 654
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829fcdc55033c5249aed0d382d3bf636
+      internalID: -1748464952349436394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_16
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 747
+        width: 721
+        height: 655
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1853a219bf36ec045924d31788d6deda
+      internalID: -5573798086032224186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_17
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 733
+        width: 732
+        height: 669
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d1f73719f13e440986c575c36a65d9
+      internalID: 535786600643671335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 31
+        width: 723
+        height: 694
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbddb8fb912dec945810a41c09b8f362
+      internalID: -181355167609592702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_19
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 22
+        width: 723
+        height: 703
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88fce8cc2d3f4d34ca3f6f33f7335b81
+      internalID: -318850474038041618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_20
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 0
+        width: 724
+        height: 725
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aeeb4bf911dd38419aac8abcb132782
+      internalID: -2542445234324028913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_21
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 0
+        width: 723
+        height: 727
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32bedfa4b75118046a1b355aaef02478
+      internalID: 5313350854806462564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_22
+      rect:
+        serializedVersion: 2
+        x: 2896
+        y: 0
+        width: 723
+        height: 725
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ad318d8bd72404bae03329ff36066b
+      internalID: -3628981102909820828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_23
+      rect:
+        serializedVersion: 2
+        x: 2155
+        y: 2666
+        width: 734
+        height: 338
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d55c348d3dbe647b118dd0f98b991e
+      internalID: -4496968620571507628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raven_24
+      rect:
+        serializedVersion: 2
+        x: 2893
+        y: 729
+        width: 717
+        height: 673
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891a31ef83f816b40bcd6142f7ab35c7
+      internalID: -1563305548533430553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 336b53f288df02741b19ec8c3b49e017
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
