@@ -16,7 +16,7 @@ public class EnemyFollow : MonoBehaviour
     public LayerMask layer;
 
     public bool playerInRange;
-    bool bumpedRight, bumpedLeft, facingRight;
+    bool bumpedRight, bumpedLeft;
 
 
 
@@ -89,7 +89,7 @@ public class EnemyFollow : MonoBehaviour
         {
 
             bumpedRight = true;
-            facingRight = true;
+           
             Debug.Log("Enemy Bumped to Right Wall");
 
         }
@@ -98,7 +98,7 @@ public class EnemyFollow : MonoBehaviour
         {
 
             bumpedLeft = true;
-            facingRight = true;
+            
             Debug.Log("Enemy Bumped to Left Wall");
         }
         

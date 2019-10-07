@@ -64,7 +64,6 @@
   <ItemGroup>
     <Compile Include="Assets\Destroy.cs" />
     <Compile Include="Assets\EXTRA ASSETS\ErbGameArt\AAA Projectiles\Demo scene with projectiles\DemoShooting.cs" />
-    <Compile Include="Assets\EXTRA ASSETS\ErbGameArt\AAA Projectiles\LWRP\ShaderChanger.cs" />
     <Compile Include="Assets\EXTRA ASSETS\ErbGameArt\AAA Projectiles\Scripts\ParticleCollisionInstance.cs" />
     <Compile Include="Assets\EXTRA ASSETS\ErbGameArt\AAA Projectiles\Scripts\ProjectileMover.cs" />
     <Compile Include="Assets\EXTRA ASSETS\ErbGameArt\AAA Projectiles\Scripts\Rotator.cs" />
@@ -84,6 +83,7 @@
     <Compile Include="Assets\EXTRA ASSETS\GabrielAguiarProductions\Unique_Projectiles_Volume_1\Scripts\SaveParticleSystemScript.cs" />
     <Compile Include="Assets\EXTRA ASSETS\GabrielAguiarProductions\Unique_Projectiles_Volume_1\Scripts\Serializables.cs" />
     <Compile Include="Assets\EXTRA ASSETS\GabrielAguiarProductions\Unique_Projectiles_Volume_1\Scripts\SpawnProjectilesScript.cs" />
+    <Compile Include="Assets\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\CharacterController2D.cs" />
