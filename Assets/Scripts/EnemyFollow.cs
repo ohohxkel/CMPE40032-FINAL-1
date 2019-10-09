@@ -10,7 +10,7 @@ public class EnemyFollow : MonoBehaviour
 
     public float moveSpeed;
     public float playerRange;
-    float newX, newY;
+    float newX, newY, rotateY;
     public int scoreValue = 10;
 
     public LayerMask layer;
@@ -37,7 +37,18 @@ public class EnemyFollow : MonoBehaviour
             //Moves toward the player if inrange
             moveSpeed += 2 * Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, thePlayer.transform.position, moveSpeed * Time.deltaTime);
-            
+
+            //Flips enemies
+            if (thePlayer.transform.position.x < transform.position.x)
+            {
+                rotateY = 180f;
+            }
+
+            else if(thePlayer.transform.position.x > transform.position.x)
+            {
+                rotateY = 0f;
+            }
+            transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, rotateY, transform.rotation.z));
         }
 
         else
@@ -49,27 +60,28 @@ public class EnemyFollow : MonoBehaviour
 
             else if (bumpedRight)
             {
-                newX = transform.position.x - moveSpeed * Time.deltaTime;            
+                newX = transform.position.x - moveSpeed * Time.deltaTime;
+                rotateY = 180f;
+                
             }
 
             else if (bumpedLeft)
             {
-                newX = transform.position.x + moveSpeed * Time.deltaTime;             
+                newX = transform.position.x + moveSpeed * Time.deltaTime;
+                rotateY = 0f;
             }
 
             else
             {
                 newX = transform.position.x + moveSpeed * Time.deltaTime;
             }
-            transform.position = new Vector3(newX, newY);  
+            transform.position = new Vector3(newX, newY);
+            transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, rotateY, transform.rotation.z));
         }
-
-
     }
 
     void OnDrawGizmosSelected()
     {
-
         // Draws circle acting as a checkpoint
         Gizmos.DrawSphere(transform.position, playerRange);
     }
@@ -87,21 +99,15 @@ public class EnemyFollow : MonoBehaviour
 
         else if (collision.gameObject.tag == "RightWall")
         {
-
             bumpedRight = true;
-           
             Debug.Log("Enemy Bumped to Right Wall");
-
         }
 
         else if (collision.gameObject.tag == "LeftWall")
         {
-
             bumpedLeft = true;
-            
             Debug.Log("Enemy Bumped to Left Wall");
-        }
-        
+        } 
     }
 
 

@@ -22,21 +22,29 @@ public class MoveCharacter : MonoBehaviour
 
 
 
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-        animator.SetFloat("HorizontalMove", Mathf.Abs(horizontalMove));
+        //horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        //animator.SetFloat("HorizontalMove", Mathf.Abs(horizontalMove));
 
-        if (Input.GetButtonDown("Jump"))
-        {
-            jump = true;
-        }
+        //if (Input.GetButtonDown("Jump"))
+        //{
+        //    jump = true;
+        //}
 
-        if (Input.GetButtonDown("Vertical"))
+        //if (Input.GetButtonDown("Vertical"))
+        //{
+        //    crouch = true;
+        //}
+        //else if (Input.GetButtonUp("Vertical"))
+        //{
+        //    crouch = false;
+        //}
+
+        if (Input.touchCount > 0)
         {
-            crouch = true;
-        }
-        else if (Input.GetButtonUp("Vertical"))
-        {
-            crouch = false;
+            Touch touch = Input.GetTouch(0);
+            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
+            touchPosition.z = 0f;
+            transform.position = touchPosition;
         }
 
      
