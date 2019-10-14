@@ -15,6 +15,10 @@ public class MoveCharacter : MonoBehaviour
     bool jump = false;
     bool crouch = false;
 
+    public GameObject PlayerHitFX;
+
+  
+
 
     // Update is called once per frame
     void Update()
@@ -39,12 +43,12 @@ public class MoveCharacter : MonoBehaviour
             crouch = false;
         }
 
-        if (Input.touchCount > 0)
+       
+
+        if (PlayerHealth.health <= 0f)
         {
-            Touch touch = Input.GetTouch(0);
-            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
-            touchPosition.z = 0f;
-            transform.position = touchPosition;
+            Instantiate(PlayerHitFX, transform.position, transform.rotation);
+            Destroy(gameObject);
         }
 
      
@@ -62,7 +66,8 @@ public class MoveCharacter : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            Destroy(collision.gameObject);
+            Instantiate(PlayerHitFX, transform.position, transform.rotation);
+            PlayerHealth.health -= 10f;
         }
     }
 }

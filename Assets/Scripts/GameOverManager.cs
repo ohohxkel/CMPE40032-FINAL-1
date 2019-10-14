@@ -5,7 +5,8 @@ using UnityEngine;
 public class GameOverManager : MonoBehaviour
 {
     Animator anim;
-    public ScoreManager score;
+    
+    public PlayerHealth health;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,7 @@ public class GameOverManager : MonoBehaviour
     void Update()
     {
         //Test variable
-        if (ScoreManager.score == 10)
+        if (PlayerHealth.health == 0f)
         {
             anim.SetTrigger("GameOver");
             Debug.Log("Game Over");
