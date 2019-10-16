@@ -11,6 +11,7 @@ public class pointbullet: MonoBehaviour
  
 
     public float bulletSpeed = 10.0f;
+    public AudioSource backgroundMusic;
 
     private Vector3 target;
 
@@ -18,6 +19,9 @@ public class pointbullet: MonoBehaviour
     void Start()
     {
         Cursor.visible = false;
+        backgroundMusic.Play();
+        backgroundMusic.loop = true;
+
     }
 
     // Update is called once per frame

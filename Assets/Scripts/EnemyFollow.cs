@@ -18,6 +18,8 @@ public class EnemyFollow : MonoBehaviour
     public bool playerInRange;
     bool bumpedRight, bumpedLeft;
 
+    public GameObject lootDrop;
+
 
 
     // Start is called before the first frame update
@@ -95,6 +97,7 @@ public class EnemyFollow : MonoBehaviour
             Instantiate(hitFX, transform.position, transform.rotation);
             ScoreManager.score += scoreValue;
             Destroy(gameObject);
+            Instantiate(lootDrop, transform.position, Quaternion.identity);
         }
 
         else if (collision.gameObject.tag == "RightWall")
