@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\EXTRA ASSETS\Asteroids Pack\Assets\Scripts\RandomRotator.cs" />
     <Compile Include="Assets\EXTRA ASSETS\ErbGameArt\AAA Projectiles\Demo scene with projectiles\DemoShooting.cs" />
     <Compile Include="Assets\EXTRA ASSETS\ErbGameArt\AAA Projectiles\Scripts\ParticleCollisionInstance.cs" />
     <Compile Include="Assets\EXTRA ASSETS\ErbGameArt\AAA Projectiles\Scripts\ProjectileMover.cs" />
@@ -122,11 +123,13 @@
     <Compile Include="Assets\Scripts\EnemyFollow.cs" />
     <Compile Include="Assets\Scripts\FollowCamera.cs" />
     <Compile Include="Assets\Scripts\GameOverManager.cs" />
+    <Compile Include="Assets\Scripts\HighScore.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\MoveCharacter.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\pointbullet.cs" />
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
+    <Compile Include="Assets\Scripts\Try.cs" />
     <Compile Include="Assets\Scripts\WaveSpawning.cs" />
     <Compile Include="Assets\Scripts\WaveTitle.cs" />
     <None Include="Assets\EXTRA ASSETS\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
