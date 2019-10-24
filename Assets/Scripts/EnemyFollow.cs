@@ -19,7 +19,7 @@ public class EnemyFollow : MonoBehaviour
     bool bumpedRight, bumpedLeft;
 
     public GameObject lootDrop;
-
+    public CamShake camShake;
 
 
     // Start is called before the first frame update
@@ -93,8 +93,9 @@ public class EnemyFollow : MonoBehaviour
 
         if (collision.gameObject.tag == "Bullet")
         {
-            CameraShaker.Instance.ShakeOnce(3f, 3f, .7f, .7f);
+            
             Instantiate(hitFX, transform.position, transform.rotation);
+            StartCoroutine(Camera.main.GetComponent<CamShake>().Shake(0.5f, 0.5f));
             ScoreManager.score += scoreValue;
             Destroy(gameObject);
             Instantiate(lootDrop, transform.position, Quaternion.identity);

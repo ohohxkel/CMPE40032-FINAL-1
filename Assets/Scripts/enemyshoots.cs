@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EZCameraShake;
 
-public class enemyshoots : MonoBehaviour {
+
+public class EnemyShoots : MonoBehaviour {
     public float speed;
     public float stoppingDistance;
     public float retreatDistance;
@@ -14,6 +16,10 @@ public class enemyshoots : MonoBehaviour {
 
     public GameObject projectile;
     private Transform Player;
+
+    private float rotateY;
+    public int scoreValue;
+    public GameObject lootDrop, hitFX;
 
 
 
@@ -29,6 +35,21 @@ public class enemyshoots : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        //Flips enemies
+        if (player.transform.position.x < transform.position.x)
+        {
+            rotateY = 180f;
+        }
+
+        else if (player.transform.position.x > transform.position.x)
+        {
+            rotateY = 0f;
+        }
+        transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, rotateY, transform.rotation.z));
+
+
+
+
         if (Vector2.Distance(transform.position, player.position) > stoppingDistance)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
@@ -52,7 +73,21 @@ public class enemyshoots : MonoBehaviour {
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Bullet")
+        {
+            Instantiate(hitFX, transform.position, transform.rotation);
+            StartCoroutine(Camera.main.GetComponent<CamShake>().Shake(0.5f, 0.5f));
+            ScoreManager.score += scoreValue;
+            Destroy(gameObject);
+            //Instantiate(lootDrop, transform.position, Quaternion.identity);
+        }
+    }
+
 }
+
+
 
 
 

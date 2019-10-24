@@ -13,6 +13,8 @@ public class WaveSpawning : MonoBehaviour
     {
         public string name;
         public Transform enemy;
+        public Transform enemy2;
+        public Transform enemy3;
         public int count;
         public float rate;
     }
@@ -30,6 +32,7 @@ public class WaveSpawning : MonoBehaviour
 
     public WaveTitle waveTitle;
 
+    int enemyChance;
 
     void Start()
     {
@@ -116,7 +119,38 @@ public class WaveSpawning : MonoBehaviour
 
         for (int i = 0; i < _wave.count; i++)
         {
-            SpawnEnemy(_wave.enemy);
+            enemyChance = Random.Range(0, 3);
+            if (enemyChance < 1)
+            {
+                if (_wave.enemy3 != null)
+                {
+                    SpawnEnemy(_wave.enemy3);
+                }
+                else
+                {
+                    SpawnEnemy(_wave.enemy);
+                }
+
+               
+            }
+            else if (enemyChance < 2)
+            {
+                if (_wave.enemy2 != null)
+                {
+                    SpawnEnemy(_wave.enemy2);
+                }
+                else
+                {
+                    SpawnEnemy(_wave.enemy);
+                }
+             
+            }
+            else if (enemyChance < 3)
+            {
+                SpawnEnemy(_wave.enemy);
+            }
+            
+
             yield return new WaitForSeconds(1f / _wave.rate);
         }
 

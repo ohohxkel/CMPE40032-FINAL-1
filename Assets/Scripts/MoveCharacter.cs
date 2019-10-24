@@ -16,8 +16,10 @@ public class MoveCharacter : MonoBehaviour
     bool crouch = false;
 
     public GameObject PlayerHitFX;
+    public pointbullet pointBullet;
 
-  
+    public float addMana = 5f;
+
 
 
     // Update is called once per frame
@@ -66,8 +68,17 @@ public class MoveCharacter : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            Instantiate(PlayerHitFX, transform.position, transform.rotation);
+            Instantiate(PlayerHitFX, transform.position, Quaternion.identity);
             PlayerHealth.health -= 10f;
+        }
+
+     
+
+        else if (collision.gameObject.tag == "Item")
+        {
+            PlayerMana.mana += addMana;
+            pointBullet.ChangeBullet(2);
+            Destroy(collision.gameObject);
         }
     }
 }

@@ -8,7 +8,11 @@ public class pointbullet: MonoBehaviour
     public GameObject player;
     public GameObject bulletStart;
     public GameObject bulletPrefab;
- 
+
+    public GameObject bulletLvl1;
+    public GameObject bulletLvl2;
+
+    public static int bulletLvl, bulletLevel;
 
     public float bulletSpeed = 10.0f;
     public AudioSource backgroundMusic;
@@ -23,7 +27,6 @@ public class pointbullet: MonoBehaviour
         backgroundMusic.loop = true;
 
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -39,14 +42,35 @@ public class pointbullet: MonoBehaviour
             float distance = difference.magnitude;
             Vector2 direction = difference / distance;
             direction.Normalize();
-            fireBullet(direction, rotationZ);
+            switch (bulletLevel)
+            {
+                case 1:
+                    bulletPrefab = bulletLvl1;
+                    break;
+                case 2:
+                    bulletPrefab = bulletLvl2;
+                    break;
+                default:
+                    bulletPrefab = bulletLvl1;
+                    break;
+            }
+            if (PlayerMana.mana > 0)
+            {
+                fireBullet(direction, rotationZ, bulletPrefab);
+            }
         }
     }
-    void fireBullet(Vector2 direction, float rotationZ)
+    void fireBullet(Vector2 direction, float rotationZ, GameObject bulletPrefab)
     {
         GameObject b = Instantiate(bulletPrefab) as GameObject;
         b.transform.position = bulletStart.transform.position;
         b.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
         b.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
+        PlayerMana.mana -= 10f;
+    }
+
+    public void ChangeBullet  (int bulletLvl)
+    {
+        bulletLevel = bulletLvl;
     }
 }

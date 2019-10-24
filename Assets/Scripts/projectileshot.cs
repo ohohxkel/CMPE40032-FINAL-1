@@ -33,6 +33,7 @@ public class projectileshot : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            PlayerHealth.health -= 5f;
             DestroyProjectile();
         }
     }
