@@ -81,7 +81,7 @@ public class EnemyShoots : MonoBehaviour {
             StartCoroutine(Camera.main.GetComponent<CamShake>().Shake(0.5f, 0.5f));
             ScoreManager.score += scoreValue;
             Destroy(gameObject);
-            //Instantiate(lootDrop, transform.position, Quaternion.identity);
+            Instantiate(lootDrop, transform.position, Quaternion.identity);
         }
     }
 

@@ -66,20 +66,26 @@ public class MoveCharacter : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+
+        switch (collision.gameObject.tag)
         {
-            Instantiate(PlayerHitFX, transform.position, Quaternion.identity);
-            PlayerHealth.health -= 10f;
+            case "Enemy":
+                Instantiate(PlayerHitFX, transform.position, Quaternion.identity);
+                PlayerHealth.health -= 10f;
+                break;
+
+            case "Item":
+                PlayerMana.mana += addMana;
+                pointBullet.ChangeBullet(2);
+                Destroy(collision.gameObject);
+                break;
+
         }
+       
 
      
 
-        else if (collision.gameObject.tag == "Item")
-        {
-            PlayerMana.mana += addMana;
-            pointBullet.ChangeBullet(2);
-            Destroy(collision.gameObject);
-        }
+      
     }
 }
 
